@@ -18,8 +18,8 @@ block content
               td= vacation.name
               td= moment(vacation.start).format('dddd, MMM Do YYYY')
               td= moment(vacation.end).format('dddd, MMM Do YYYY')
-              td= vacation.lat
-              td= vacation.lng
+              td= vacation.lat.toFixed(2)
+              td= vacation.lng.toFixed(2)
 
 block scripts
   script(src='/js/user/vacations.js')

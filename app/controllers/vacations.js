@@ -8,9 +8,8 @@ exports.init = function(req, res){
 };
 
 exports.create = function(req, res){
-  var vacation = new Vacation(req.body);
-  vacation.create(function(){
-    res.redirect('/vacation');
+  Vacation.create(req.body, function(){
+    res.redirect('/vacations');
   });
 };
 
