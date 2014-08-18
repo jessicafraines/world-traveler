@@ -1,0 +1,23 @@
+extends ../shared/template
+block content
+  form(role='form', method='post', action='/vacations')
+    input#lat(type='hidden', name='lat')
+    input#lng(type='hidden', name='lng')
+    .row
+      .col-sm-4
+          .form-group
+            label(for='name') Name Your Vacation
+            input#name.form-control(type='text', placeholder='Going to Hawaii', name='name')
+          .form-inline
+            .form-group
+          label(for='from') From
+              input#from.form-control(type='date', placeholder='11/01/2014', name='from')
+            .form-group
+          label(for='to') To
+              input#to.form-control(type='date', placeholder='11/10/2014', name='to')
+              br
+              button.btn.btn-default(type='submit') Add Vacation
+
+    .col-sm-8
+block scripts
+  script(src='/js/user/new-vacation.js')

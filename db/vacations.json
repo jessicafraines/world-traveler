@@ -1,0 +1,19 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Hawaii",
+  "start":{"$date":477295200000},
+  "end":{"$date":477295300000},
+  "photos":["http://4.bp.blogspot.com/-RimQpPqNC1M/T_g98Fytx4I/AAAAAAAACEc/UZF40YIcu9o/s1600/Hawaii+Vacations.jpg", "http://hawaiiancruisesguide.com/wp-content/uploads/PIC_02.jpg"],
+  "lat":21.3,
+  "lng":157.7
+}
+
+{
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Hyannis",
+  "start":{"$date":1408397476457},
+  "end":{"$date":1408397540400},
+  "photos":["http://media-cdn.tripadvisor.com/media/photo-s/01/04/a1/30/view-from-balcony-to.jpg", "http://pix.epodunk.com/MA/ma_hyannis03.jpg"],
+  "lat":41.6,
+  "lng":70.2
+}
