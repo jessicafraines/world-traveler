@@ -1,7 +1,7 @@
 ## name of project
 ### Code Badges
-build status icon
-coverage status icon
+[![Build Status](https://travis-ci.org/jessicafraines/world-traveler.svg)](https://travis-ci.org/jessicafraines/world-traveler)
+[![Coverage Status](https://coveralls.io/repos/jessicafraines/world-traveler/badge.png)](https://coveralls.io/r/jessicafraines/world-traveler)
 
 ### About
 write a description about your project
