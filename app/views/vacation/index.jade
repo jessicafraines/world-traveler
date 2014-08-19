@@ -1,6 +1,7 @@
 
 extends ../shared/template
 block content
+  #vacations
     .row
       .col-xs-4
         #map
@@ -14,12 +15,11 @@ block content
             th Lng
           tbody
           each vacation in vacations
-            tr
-              td= vacation.name
-              td= moment(vacation.start).format('dddd, MMM Do YYYY')
-              td= moment(vacation.end).format('dddd, MMM Do YYYY')
-              td= vacation.lat.toFixed(2)
-              td= vacation.lng.toFixed(2)
-
+            tr(data-name=vacation.name, data-lat=vacation.lat, data-lng=vacation.lng)
+              td: a(href='/vacations/#{vacation._id}')= vacation.name
+              td= moment(vacation.start).format('MMM Do YYYY')
+              td= moment(vacation.end).format('MMM Do YYYY')
+              td= vacation.lat.toFixed(8)
+              td= vacation.lng.toFixed(8)
 block scripts
   script(src='/js/user/vacations.js')
