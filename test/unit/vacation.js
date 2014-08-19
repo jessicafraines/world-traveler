@@ -55,5 +55,19 @@ describe('Vacation', function(){
       });
     });
   });
+  describe('.findById', function(){
+    it('should find a vacation by id', function(done){
+      Vacation.findById('000000000000000000000001', function(vacation){
+        expect(vacation).to.be.instanceof(Vacation);
+        expect(vacation.name).to.equal('Hawaii');
+        done();
+      });
+    });
+  });
+  /*describe('#uploadPhoto', function(){
+    it('should allow a photo to be uploaded from a file', function(done){
+      Vacation.findById('000000000000000000000001', function(vacation){
+    });
+  });*/
 });
 
